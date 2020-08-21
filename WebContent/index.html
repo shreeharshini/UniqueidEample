@@ -9,13 +9,13 @@
 <form action="SaveId" method="post">  
 	<table>  
 		<tr >
-			<td>First Name:</td><td><input type="text" name="firstname"/></td>
+			<td>First Name:</td><td><input type="text" name="firstname" pattern="[^-,$#%*@&(){}]+" title="Enter alphabets" required/></td>
 		</tr>  
 		<tr>
-			<td>Last Name:</td><td><input type="text" name="lastname"/></td>
+			<td>Last Name:</td><td><input type="text" name="lastname" pattern="[^-,$#%*@&(){}]+" title="Enter alphabets only" required/></td>
 		</tr>  
 		<tr>
-			<td>Email:</td><td><input type="email" name="email"/></td>
+			<td>Email:</td><td><input type="email" name="email" required/></td>
 		</tr>
 		
 		<tr><td colspan="2"><input type="submit" value="Save User"/></td></tr>  

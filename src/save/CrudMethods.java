@@ -48,7 +48,7 @@ public class CrudMethods {
         int status=0;  
         try{  
             Connection con=CrudMethods.getConnection();  
-            System.out.print(e.getUniqueid());
+            System.out.print(e.getLastname());
             PreparedStatement ps=con.prepareStatement(  
                          "update Example set lname=? where uniqueid=?"); 
             ps.setString(1,e.getLastname());  

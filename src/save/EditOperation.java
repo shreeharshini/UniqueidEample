@@ -17,14 +17,16 @@ public class EditOperation extends HttpServlet {
         
         String uniqueid=request.getParameter("uniqueid");  
         String fname=request.getParameter("firstname");  
-        String lname=request.getParameter("lastname");  
+        String lname=request.getParameter("newlastname");  
+        
+        
           
         IdParam e=new IdParam();  
         e.setFirstname(fname);
         e.setLastname(lname);
         e.setUniqueid(uniqueid);
        
-        System.out.print(e.getUniqueid());
+        System.out.print(lname);
           
         int status=CrudMethods.update(e);  
         if(status>0){  
